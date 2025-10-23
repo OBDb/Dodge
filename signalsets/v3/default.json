@@ -37,13 +37,12 @@
     {"id": "DODGE_TP_RL", "path": "Tires", "fmt": {          "len": 8, "max": 101.49,             "mul": 0.398,             "unit": "psi"     }, "name": "Rear left tire pressure",    "suggestedMetric": "rearLeftTirePressure"},
     {"id": "DODGE_TT_RL", "path": "Tires", "fmt": {"bix": 8, "len": 8, "max": 205,    "min": -50,               "add": -50, "unit": "celsius" }, "name": "Rear left tire temperature"}
   ]},
-{ "hdr": "742", "fcm1": true, "dbg": true, "cmd": {"22": "A022"}, "freq": 1,
+{ "hdr": "742", "rax": "4C2", "fcm1": true, "dbg": true, "cmd": {"22": "A077"}, "freq": 5,
   "signals": [
-    {"id": "DODGE_TP_FL_V3", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "psi" }, "name": "Front left tire pressure",  "suggestedMetric": "frontLeftTirePressure"},
-    {"id": "DODGE_TP_FR_V3", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "psi" }, "name": "Front right tire pressure", "suggestedMetric": "frontRightTirePressure"},
-    {"id": "DODGE_TP_RL_V3", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "psi" }, "name": "Rear left tire pressure",   "suggestedMetric": "rearLeftTirePressure"},
-    {"id": "DODGE_TP_RR_V3", "path": "Tires", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "psi" }, "name": "Rear right tire pressure",  "suggestedMetric": "rearRightTirePressure"},
-    {"id": "DODGE_TP_SPARE", "path": "Tires", "fmt": {"bix": 56, "len": 8, "max": 255, "unit": "psi" }, "name": "Spare tire pressure"}
+    {"id": "DODGE_TP_FL_V3", "path": "Tires", "fmt": {"bix": 24, "len": 8, "max": 255, "unit": "psi" }, "name": "Tire pressure front left",  "suggestedMetric": "frontRightTirePressure"},
+    {"id": "DODGE_TP_FR_V3", "path": "Tires", "fmt": {"bix": 32, "len": 8, "max": 255, "unit": "psi" }, "name": "Tire pressure front right", "suggestedMetric": "frontLeftTirePressure"},
+    {"id": "DODGE_TP_RL_V3", "path": "Tires", "fmt": {"bix": 40, "len": 8, "max": 255, "unit": "psi" }, "name": "Tire pressure rear left",   "suggestedMetric": "rearRightTirePressure"},
+    {"id": "DODGE_TP_RR_V3", "path": "Tires", "fmt": {"bix": 48, "len": 8, "max": 255, "unit": "psi" }, "name": "Tire pressure rear right",  "suggestedMetric": "rearLeftTirePressure"}
   ]},
 { "hdr": "763", "rax": "4E3", "fcm1": true, "dbg": true, "cmd": {"22": "032D"}, "freq": 0.25,
   "signals": [
