@@ -1927,7 +1927,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "A8"}, "freq": 30,
   "signals": [
-    {"id": "DODGE_FLI", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 255, "div": 256, "unit": "percent" }, "name": "Fuel level", "suggestedMetric": "fuelTankLevel"}
+    {"id": "DODGE_FLI", "path": "Fuel", "fmt": {"bix": 96, "len": 16, "max": 255, "div": 256, "unit": "percent" }, "name": "Fuel level"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "B1"}, "freq": 3600,
   "signals": [
@@ -2017,17 +2017,17 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0166"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_FUEL_MASS_CORR_CYL_1", "path": "Fuel", "fmt": {"bix": 144, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 1"},
-    {"id": "DODGE_FUEL_MASS_CORR_CYL_2", "path": "Fuel", "fmt": {"bix": 160, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 2"},
-    {"id": "DODGE_FUEL_MASS_CORR_CYL_3", "path": "Fuel", "fmt": {"bix": 176, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 3"},
-    {"id": "DODGE_FUEL_MASS_CORR_CYL_4", "path": "Fuel", "fmt": {"bix": 192, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 4"},
-    {"id": "DODGE_FUEL_MASS_CORR_CYL_5", "path": "Fuel", "fmt": {"bix": 208, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 5"},
-    {"id": "DODGE_FUEL_MASS_CORR_CYL_6", "path": "Fuel", "fmt": {"bix": 224, "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 6"}
+    {"id": "DODGE_FUEL_MASS_CORR_CYL_1", "path": "Fuel", "fmt": {"bix": 144, "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 1, mg/hub"},
+    {"id": "DODGE_FUEL_MASS_CORR_CYL_2", "path": "Fuel", "fmt": {"bix": 160, "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 2, mg/hub"},
+    {"id": "DODGE_FUEL_MASS_CORR_CYL_3", "path": "Fuel", "fmt": {"bix": 176, "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 3, mg/hub"},
+    {"id": "DODGE_FUEL_MASS_CORR_CYL_4", "path": "Fuel", "fmt": {"bix": 192, "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 4, mg/hub"},
+    {"id": "DODGE_FUEL_MASS_CORR_CYL_5", "path": "Fuel", "fmt": {"bix": 208, "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 5, mg/hub"},
+    {"id": "DODGE_FUEL_MASS_CORR_CYL_6", "path": "Fuel", "fmt": {"bix": 224, "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Fuel mass correction, cylinder 6, mg/hub"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0168"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0168"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_EOT_V2",           "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 3003.56, "min": -3549.94, "div": 10,  "add": -273.14, "sign": true, "unit": "celsius" }, "name": "Engine oil temperature",                        "suggestedMetric": "engineOilTemperature"},
     {"id": "DODGE_OIL_TEMEPRATURE",  "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 6280,    "min": -273,     "div": 10,  "add": -273.14,               "unit": "celsius" }, "name": "Oil temperature"},
+    {"id": "DODGE_EOT_V2",           "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 3003.56, "min": -3549.94, "div": 10,  "add": -273.14, "sign": true, "unit": "celsius" }, "name": "Engine oil temperature",                        "suggestedMetric": "engineOilTemperature"},
     {"id": "DODGE_EOT_0168",         "path": "Engine", "fmt": {"bix": 160, "len": 16, "max": 3003.56, "min": -3549.94, "div": 10,  "add": -273.14, "sign": true, "unit": "celsius" }, "name": "Engine oil temperature"},
     {"id": "DODGE_SENSED_P_PF_DN",   "path": "Engine", "fmt": {"bix": 176, "len": 16, "max": 32767,   "min": -32768,                               "sign": true, "unit": "unknown" }, "name": "Sensed pressure particulate filter downstream"},
     {"id": "DODGE_TURBINE_UP_T",     "path": "Engine", "fmt": {"bix": 224, "len": 16, "max": 6280.36, "min": -273.14,  "div": 10,  "add": -273.14,               "unit": "celsius" }, "name": "Turbine upstream temperature"},
@@ -2095,23 +2095,23 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0234"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_INJ_WIDTH_CYL_1", "path": "Engine", "fmt": { "len": 32, "max": 4294967,    "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 1"},
-    {"id": "DODGE_INJ_CYL_1",       "path": "Engine", "fmt": { "len": 32, "max": 4294967295,              "unit": "unknown"      }, "name": "Injection pulse, cylinder 1"}
+    {"id": "DODGE_INJ_CYL_1",       "path": "Engine", "fmt": { "len": 32, "max": 4294967295,              "unit": "unknown"      }, "name": "Injection pulse, cylinder 1"},
+    {"id": "DODGE_INJ_WIDTH_CYL_1", "path": "Engine", "fmt": { "len": 32, "max": 4294967,    "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0235"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_INJ_WIDTH_CYL_2", "path": "Engine", "fmt": { "len": 32, "max": 4294967,    "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 2"},
-    {"id": "DODGE_INJ_CYL_2",       "path": "Engine", "fmt": { "len": 32, "max": 4294967295,              "unit": "unknown"      }, "name": "Injection pulse, cylinder 2"}
+    {"id": "DODGE_INJ_CYL_2",       "path": "Engine", "fmt": { "len": 32, "max": 4294967295,              "unit": "unknown"      }, "name": "Injection pulse, cylinder 2"},
+    {"id": "DODGE_INJ_WIDTH_CYL_2", "path": "Engine", "fmt": { "len": 32, "max": 4294967,    "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 2"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0236"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_INJ_WIDTH_CYL_3", "path": "Engine", "fmt": { "len": 32, "max": 4294967,    "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 3"},
-    {"id": "DODGE_INJ_CYL_3",       "path": "Engine", "fmt": { "len": 32, "max": 4294967295,              "unit": "unknown"      }, "name": "Injection pulse, cylinder 3"}
+    {"id": "DODGE_INJ_CYL_3",       "path": "Engine", "fmt": { "len": 32, "max": 4294967295,              "unit": "unknown"      }, "name": "Injection pulse, cylinder 3"},
+    {"id": "DODGE_INJ_WIDTH_CYL_3", "path": "Engine", "fmt": { "len": 32, "max": 4294967,    "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 3"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0237"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_INJ_WIDTH_CYL_4", "path": "Engine", "fmt": { "len": 32, "max": 4294967,    "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 4"},
-    {"id": "DODGE_INJ_CYL_4",       "path": "Engine", "fmt": { "len": 32, "max": 4294967295,              "unit": "unknown"      }, "name": "Injection pulse, cylinder 4"}
+    {"id": "DODGE_INJ_CYL_4",       "path": "Engine", "fmt": { "len": 32, "max": 4294967295,              "unit": "unknown"      }, "name": "Injection pulse, cylinder 4"},
+    {"id": "DODGE_INJ_WIDTH_CYL_4", "path": "Engine", "fmt": { "len": 32, "max": 4294967,    "div": 1000, "unit": "milliseconds" }, "name": "Injector pulse width, cylinder 4"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "0255"}, "freq": 1,
   "signals": [
@@ -2155,8 +2155,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "03BC"}, "freq": 30,
   "signals": [
-    {"id": "DODGE_ODO_03BC", "path": "Trips", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"},
-    {"id": "DODGE_ODO",      "path": "Trips", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "kilometers" }, "name": "Odometer"}
+    {"id": "DODGE_ODO",      "path": "Trips", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "kilometers" }, "name": "Odometer"},
+    {"id": "DODGE_ODO_03BC", "path": "Trips", "fmt": { "len": 32, "max": 4294967, "div": 1000, "unit": "kilometers" }, "name": "Odometer", "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "040F"}, "freq": 30,
   "signals": [
@@ -2164,8 +2164,8 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "043B"}, "freq": 30,
   "signals": [
-    {"id": "DODGE_ODO_V2",  "path": "Trips", "fmt": { "len": 16, "max": 536862.72, "mul": 8.192,             "unit": "miles" }, "name": "Odometer",                  "suggestedMetric": "odometer"},
-    {"id": "DODGE_PCM_ODO", "path": "Trips", "fmt": { "len": 16, "max": 536862,    "mul": 1024,  "div": 125, "unit": "miles" }, "name": "Odometer, engine computer"}
+    {"id": "DODGE_PCM_ODO", "path": "Trips", "fmt": { "len": 16, "max": 536862,    "mul": 1024,  "div": 125, "unit": "miles" }, "name": "Odometer, engine computer"},
+    {"id": "DODGE_ODO_V2",  "path": "Trips", "fmt": { "len": 16, "max": 536862.72, "mul": 8.192,             "unit": "miles" }, "name": "Odometer",                  "suggestedMetric": "odometer"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "059E"}, "freq": 1,
   "signals": [
@@ -2265,7 +2265,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1935"}, "freq": 5,
   "signals": [
-    {"id": "DODGE_IAT_1935", "path": "Engine", "fmt": { "len": 16, "max": 65495, "min": -40, "add": -40, "unit": "fahrenheit" }, "name": "Intake manifold air temperature"}
+    {"id": "DODGE_INT_MANIFOLD_AIR_T", "path": "Engine", "fmt": { "len": 16, "max": 65495, "min": -40, "add": -40, "unit": "fahrenheit" }, "name": "Intake manifold air temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "1997"}, "freq": 1,
   "signals": [
@@ -2279,33 +2279,33 @@
   "signals": [
     {"id": "DODGE_WASTEGATE_POS_SENS", "path": "Engine", "fmt": { "len": 16, "max": 319.8107, "mul": 61, "div": 12500, "unit": "volts" }, "name": "Wastegate position sensor"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2007"}, "freq": 3600,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "2007"}, "freq": 30,
   "signals": [
-    {"id": "DODGE_ODO_LAST_OVERSPEED", "path": "Movement", "fmt": { "len": 24, "max": 1677721.5, "div": 10, "unit": "kilometers" }, "name": "Odometer at last excess speed event"}
+    {"id": "DODGE_ODO_LAST_OVERSPEED", "path": "Movement", "fmt": { "len": 24, "max": 1677721, "div": 10, "unit": "kilometers" }, "name": "Odometer at last excess speed recognition"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3800"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_TOT_FUEL_CORR_CYL_1", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 1"}
+    {"id": "DODGE_TOT_FUEL_CORR_CYL_1", "path": "Fuel", "fmt": { "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 1, mg/hub"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3801"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_TOT_FUEL_CORR_CYL_2", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 2"}
+    {"id": "DODGE_TOT_FUEL_CORR_CYL_2", "path": "Fuel", "fmt": { "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 2, mg/hub"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3802"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_TOT_FUEL_CORR_CYL_3", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 3"}
+    {"id": "DODGE_TOT_FUEL_CORR_CYL_3", "path": "Fuel", "fmt": { "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 3, mg/hub"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3803"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_TOT_FUEL_CORR_CYL_4", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 4"}
+    {"id": "DODGE_TOT_FUEL_CORR_CYL_4", "path": "Fuel", "fmt": { "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 4, mg/hub"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3804"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_TOT_FUEL_CORR_CYL_5", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 5"}
+    {"id": "DODGE_TOT_FUEL_CORR_CYL_5", "path": "Fuel", "fmt": { "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 5, mg/hub"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3805"}, "freq": 1,
   "signals": [
-    {"id": "DODGE_TOT_FUEL_CORR_CYL_6", "path": "Fuel", "fmt": { "len": 16, "max": 327.67, "min": -327.68, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 6"}
+    {"id": "DODGE_TOT_FUEL_CORR_CYL_6", "path": "Fuel", "fmt": { "len": 16, "max": 327, "min": -327, "div": 100, "sign": true, "unit": "scalar" }, "name": "Total fuel correction, cylinder 6, mg/hub"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "3807"}, "freq": 30,
   "signals": [
@@ -2397,7 +2397,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0C6"}, "freq": 5,
   "signals": [
-    {"id": "DODGE_EXH_GAS_T_4_SCR_CAT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 4 – SCR CAT midbed"}
+    {"id": "DODGE_EXH_GAS_T_4_SCR_CAT", "path": "Engine", "fmt": {"bix": 16, "len": 16, "max": 32799, "min": -32736, "add": 32, "sign": true, "unit": "fahrenheit" }, "name": "Exhaust gas temperature 4, catalyst middle"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "A0C8"}, "freq": 5,
   "signals": [
@@ -2441,7 +2441,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "B010"}, "freq": 5,
   "signals": [
-    {"id": "DODGE_ATF_T_VAR_3", "path": "Transmission", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 3", "suggestedMetric": "transmissionFluidTemperature"},
+    {"id": "DODGE_ATF_T_VAR_3", "path": "Transmission", "fmt": { "len": 16, "max": 1023.9843, "div": 64, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 3"},
     {"id": "DODGE_ATF_T_VAR_1", "path": "Transmission", "fmt": { "len": 16, "max": 1023,      "div": 64, "unit": "fahrenheit" }, "name": "Transmission fluid temperature, variant 1"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"22": "B028"}, "freq": 0.25,
